@@ -1,4 +1,52 @@
-@import "./base/*";
-@import "./typography/*";
-@import "./components/*";
-@import "./layout/*";
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/poppins-v15-latin-regular.woff2") format("woff2"),
+    url("../assets/fonts/poppins-v15-latin-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/poppins-v15-latin-700.woff2") format("woff2"),
+    url("../assets/fonts/poppins-v15-latin-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/roboto-v27-latin-regular.woff2") format("woff2"),
+    url("../assets/fonts/roboto-v27-latin-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/roboto-v27-latin-500.woff2") format("woff2"),
+    url("../assets/fonts/roboto-v27-latin-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/roboto-v27-latin-700.woff2") format("woff2"),
+    url("../assets/fonts/roboto-v27-latin-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #7e68e7;
+  --dark-primary-color: #313388;
+}
+
+@import "base/normalize.scss";
+@import "base/base";
+@import "components/header";
+@import "components/subTitle";
+@import "components/card-day";
+@import "components/card-location";
+@import "components/avatar";
+@import "components/newlocation";
+@import "components/card_visit";
+@import "layout/container";
+@import "layout/layout";

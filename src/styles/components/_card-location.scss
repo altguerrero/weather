@@ -1,0 +1,116 @@
+.card-location {
+  &__main {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-200px);
+    padding-right: 2rem;
+  }
+  &__container {
+    display: grid;
+    row-gap: 1.5rem;
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    margin-bottom: 2rem;
+    border-radius: 25px;
+    background-color: #fff;
+  }
+
+  &__item:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dce8f4;
+    border-radius: 25px;
+    padding: 2rem 1rem;
+    & svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &__content {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__temp {
+    text-align: center;
+
+    & h4 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 3rem;
+      line-height: 1;
+      display: block;
+      position: relative;
+      padding-right: 1.125rem;
+
+      &::before {
+        content: "°";
+        display: block;
+        width: 10px;
+        height: 10px;
+        font-size: 20px;
+        position: absolute;
+        top: 0;
+        right: 10px;
+      }
+      &::after {
+        content: "C";
+        display: block;
+        width: 10px;
+        height: 10px;
+        font-size: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+  &__address {
+    height: 100%;
+    position: relative;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 40%;
+      background-color: rgba(0, 0, 0, 0.25);
+      position: absolute;
+      left: 0;
+    }
+
+    & span:first-child {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+    & span:last-child {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 0 1rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
