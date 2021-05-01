@@ -830,27 +830,57 @@ export const Start = () => {
 };
 
 export const CityMap = () => {
-  let icon = `
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="588.9px"
-	 height="309.1px" viewBox="0 0 588.9 309.1" style="enable-background:new 0 0 588.9 309.1;" xml:space="preserve">
-<style type="text/css">
-	.st0_ciytMap{fill:#D1CEEA;}
-	.st1_ciytMap{fill:#FB5E93;}
-	.st2_ciytMap{fill:#7E68E7;}
-	.st3_ciytMap{fill:#37334C;}
-	.st4_ciytMap{fill:#D5D5D7;}
-	.st5_ciytMap{fill:#F2F0FE;}
-	.st6_ciytMap{fill:#C8C7CC;}
-</style>
-<defs>
-</defs>
-<g>
-	<circle class="st0_ciytMap" cx="461.8" cy="144.8" r="20.1"/>
-	<circle class="st1_ciytMap" cx="490.4" cy="130" r="30.5"/>
-	<path class="st2_ciytMap" d="M241.8,309.1c0,0-0.2-2.1-0.9-5.6C241.5,305.2,241.8,307.1,241.8,309.1z"/>
-	<g>
-		<path class="st3_ciytMap" d="M52.1,303.7l-2.6-0.4c0.3-1.8,0.6-3.5,0.9-5.3l2.6,0.5C52.7,300.2,52.4,301.9,52.1,303.7z"/>
-		<path class="st3_ciytMap" d="M55,288.2l-2.6-0.6c0.8-3.5,1.6-6.9,2.5-10.3l2.6,0.7C56.6,281.3,55.7,284.7,55,288.2z M530.3,287.8
+  let icon = `<svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  x="0px"
+  y="0px"
+  width="588.9px"
+  height="309.1px"
+  viewBox="0 0 588.9 309.1"
+  style="enable-background: new 0 0 588.9 309.1"
+  xml:space="preserve"
+>
+  <style type="text/css">
+    .st0_CityMap {
+      fill: #d1ceea;
+    }
+    .st1_CityMap {
+      fill: #fb5e93;
+    }
+    .st2_CityMap {
+      fill: #7e68e7;
+    }
+    .st3_CityMap {
+      fill: #37334c;
+    }
+    .st4_CityMap {
+      fill: #d5d5d7;
+    }
+    .st5_CityMap {
+      fill: #f2f0fe;
+    }
+    .st6_CityMap {
+      fill: #c8c7cc;
+    }
+  </style>
+  <defs></defs>
+  <g>
+    <circle class="st0_CityMap" cx="461.8" cy="144.8" r="20.1" />
+    <circle class="st1_CityMap" cx="490.4" cy="130" r="30.5" />
+    <path
+      class="st2_CityMap"
+      d="M241.8,309.1c0,0-0.2-2.1-0.9-5.6C241.5,305.2,241.8,307.1,241.8,309.1z"
+    />
+    <g>
+      <path
+        class="st3_CityMap"
+        d="M52.1,303.7l-2.6-0.4c0.3-1.8,0.6-3.5,0.9-5.3l2.6,0.5C52.7,300.2,52.4,301.9,52.1,303.7z"
+      />
+      <path
+        class="st3_CityMap"
+        d="M55,288.2l-2.6-0.6c0.8-3.5,1.6-6.9,2.5-10.3l2.6,0.7C56.6,281.3,55.7,284.7,55,288.2z M530.3,287.8
 			c-0.7-3.4-1.6-6.8-2.5-10.2l2.6-0.7c0.9,3.4,1.7,6.9,2.5,10.3L530.3,287.8z M60.3,267.9l-2.5-0.8c1-3.4,2.2-6.7,3.4-10l2.5,0.9
 			C62.5,261.3,61.4,264.6,60.3,267.9z M524.9,267.6c-1-3.3-2.1-6.6-3.3-9.9l2.5-0.9c1.2,3.3,2.3,6.7,3.4,10L524.9,267.6z
 			 M67.4,248.2l-2.5-1c1.3-3.2,2.7-6.5,4.2-9.7l2.4,1.1C70.1,241.8,68.7,245,67.4,248.2z M517.8,248c-1.3-3.2-2.7-6.4-4.2-9.6
@@ -872,106 +902,263 @@ export const CityMap = () => {
 			C242.4,102.2,238.9,102.9,235.5,103.8z M349.5,103.7c-3.4-0.8-6.8-1.6-10.2-2.2l0.5-2.6c3.4,0.7,6.9,1.4,10.3,2.2L349.5,103.7z
 			 M256,99.7l-0.4-2.6c3.5-0.5,7-1,10.5-1.4l0.3,2.6C263,98.8,259.5,99.2,256,99.7z M329,99.7c-3.4-0.5-6.9-1-10.4-1.3l0.3-2.6
 			c3.5,0.4,7,0.8,10.5,1.3L329,99.7z M276.8,97.5l-0.2-2.7c3.5-0.2,7.1-0.4,10.6-0.5l0.1,2.7C283.8,97.1,280.3,97.3,276.8,97.5z
-			 M308.2,97.5c-3.5-0.2-6.9-0.4-10.4-0.4l0.1-2.7c3.5,0.1,7.1,0.2,10.6,0.4L308.2,97.5z"/>
-		<path class="st3_ciytMap" d="M533.2,303.7c-0.3-1.7-0.6-3.5-0.8-5.2l2.6-0.5c0.3,1.8,0.6,3.5,0.9,5.3L533.2,303.7z"/>
-	</g>
-	<circle class="st0_ciytMap" cx="257.1" cy="145.4" r="20.1"/>
-	<circle class="st0_ciytMap_ciytMap" cx="222.8" cy="156.6" r="11.8"/>
-	<circle class="st0_ciytMap_ciytMap" cx="78.4" cy="189.3" r="11.8"/>
-	<path class="st2_ciytMap" _ciytMapd="M305.1,0c-15.2,0-27.5,12.4-27.5,27.5c0,19.1,27.6,51.7,27.6,51.7s27.5-33.6,27.5-51.7
+			 M308.2,97.5c-3.5-0.2-6.9-0.4-10.4-0.4l0.1-2.7c3.5,0.1,7.1,0.2,10.6,0.4L308.2,97.5z"
+      />
+      <path
+        class="st3_CityMap"
+        d="M533.2,303.7c-0.3-1.7-0.6-3.5-0.8-5.2l2.6-0.5c0.3,1.8,0.6,3.5,0.9,5.3L533.2,303.7z"
+      />
+    </g>
+    <circle class="st0_CityMap" cx="257.1" cy="145.4" r="20.1" />
+    <circle class="st0_CityMap" cx="222.8" cy="156.6" r="11.8" />
+    <circle class="st0_CityMap" cx="78.4" cy="189.3" r="11.8" />
+    <path
+      class="st2_CityMap"
+      d="M305.1,0c-15.2,0-27.5,12.4-27.5,27.5c0,19.1,27.6,51.7,27.6,51.7s27.5-33.6,27.5-51.7
 		C332.7,12.4,320.3,0,305.1,0z M316.5,38.5c-3.1,3.1-7.2,4.7-11.3,4.7c-4.1,0-8.2-1.6-11.3-4.7c-6.2-6.2-6.2-16.4,0-22.6
-		c3-3,7-4.7,11.3-4.7c4.3,0,8.3,1.7,11.3,4.7C322.7,22.1,322.7,32.3,316.5,38.5z"/>
-	<ellipse class="st3_ciytMap" cx="305.1" cy="96.7" rx="27.5" ry="5.6"/>
-	<g>
-		<polygon class="st4_ciytMap" points="548.8,198.4 568.8,180.1 588.9,198.4 588.9,309.1 548.8,309.1 		"/>
-		<polygon class="st3_ciytMap" points="568.8,180.1 506.4,180.1 490.4,198.4 548.8,198.4 		"/>
-		<rect x="490.4" y="198.4" class="st5_ciytMap" width="58.4" height="110.6"/>
-		<rect x="495.1" y="205" class="st3_ciytMap" width="47.6" height="10.3"/>
-		<rect x="559" y="205" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="569.8" y="205" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="559" y="225.9" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="569.8" y="225.9" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="559" y="246.8" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="569.8" y="246.8" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="559" y="267.7" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="495.1" y="284.6" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="526.9" y="284.6" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="511.6" y="284.6" class="st6_ciytMap" width="10.1" height="24.5"/>
-		<rect x="537.3" y="284.6" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="569.8" y="267.7" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="495.1" y="225.9" class="st3_ciytMap" width="47.6" height="10.3"/>
-		<rect x="495.1" y="246.8" class="st3_ciytMap" width="47.6" height="10.3"/>
-		<rect x="495.1" y="263.7" class="st3_ciytMap" width="47.6" height="10.3"/>
-	</g>
-	<g>
-		<polygon class="st4_ciytMap" points="418.3,198.4 438.3,180.1 458.3,198.4 458.3,309.1 418.3,309.1 		"/>
-		<polygon class="st3_ciytMap" points="438.3,180.1 375.9,180.1 359.9,198.4 418.3,198.4 		"/>
-		<rect x="359.9" y="198.4" class="st5_ciytMap" width="58.4" height="110.6"/>
-		<rect x="364.6" y="205" class="st3_ciytMap" width="47.6" height="10.3"/>
-		<rect x="428.5" y="205" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="439.3" y="205" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="428.5" y="225.9" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="439.3" y="225.9" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="428.5" y="246.8" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="439.3" y="246.8" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="428.5" y="267.7" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="364.6" y="284.6" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="396.4" y="284.6" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="381" y="284.6" class="st6_ciytMap" width="10.1" height="24.5"/>
-		<rect x="406.8" y="284.6" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="439.3" y="267.7" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="364.6" y="225.9" class="st3_ciytMap" width="47.6" height="10.3"/>
-		<rect x="364.6" y="246.8" class="st3_ciytMap" width="47.6" height="10.3"/>
-		<rect x="364.6" y="263.7" class="st3_ciytMap" width="47.6" height="10.3"/>
-	</g>
-	<g>
-		<polygon class="st4_ciytMap" points="184.5,198.4 204.5,180.1 224.6,198.4 224.6,309.1 184.5,309.1 		"/>
-		<polygon class="st3_ciytMap" points="204.5,180.1 142.1,180.1 126.1,198.4 184.5,198.4 		"/>
-		<rect x="126.1" y="198.4" class="st5_ciytMap" width="58.4" height="110.6"/>
-		<rect x="130.8" y="205" class="st3_ciytMap" width="47.6" height="10.3"/>
-		<rect x="194.7" y="205" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="205.5" y="205" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="194.7" y="225.9" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="205.5" y="225.9" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="194.7" y="246.8" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="205.5" y="246.8" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="194.7" y="267.7" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="130.8" y="284.6" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="162.6" y="284.6" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="147.3" y="284.6" class="st6_ciytMap" width="10.1" height="24.5"/>
-		<rect x="173" y="284.6" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="205.5" y="267.7" class="st3_ciytMap" width="5.5" height="10.3"/>
-		<rect x="130.8" y="225.9" class="st3_ciytMap" width="47.6" height="10.3"/>
-		<rect x="130.8" y="246.8" class="st3_ciytMap" width="47.6" height="10.3"/>
-		<rect x="130.8" y="263.7" class="st3_ciytMap" width="47.6" height="10.3"/>
-	</g>
-	<g>
-		<rect x="237.1" y="267.7" class="st5_ciytMap" width="58.4" height="41.4"/>
-		<rect x="242.9" y="279.2" class="st3_ciytMap" width="5.5" height="15.6"/>
-		<polygon class="st4_ciytMap" points="295.4,267.7 315.5,249.4 332.1,267.7 332.1,309.1 295.4,309.1 		"/>
-		<polygon class="st3_ciytMap" points="315.5,249.4 253,249.4 237.1,267.7 295.4,267.7 		"/>
-		<rect x="253.8" y="287.1" class="st6_ciytMap" width="10.1" height="21.9"/>
-		<rect x="269.3" y="279.2" class="st3_ciytMap" width="15.8" height="15.8"/>
-		<rect x="305.1" y="279.2" class="st3_ciytMap" width="15.8" height="15.8"/>
-	</g>
-	<g>
-		<rect y="267.7" class="st5_ciytMap" width="58.4" height="41.4"/>
-		<rect x="5.8" y="279.2" class="st3_ciytMap" width="5.5" height="15.6"/>
-		<polygon class="st4_ciytMap" points="58.4,267.7 78.4,249.4 95,267.7 95,309.1 58.4,309.1 		"/>
-		<polygon class="st3_ciytMap" points="78.4,249.4 16,249.4 0,267.7 58.4,267.7 		"/>
-		<rect x="16.7" y="287.1" class="st6_ciytMap" width="10.1" height="21.9"/>
-		<rect x="32.2" y="279.2" class="st3_ciytMap" width="15.8" height="15.8"/>
-		<rect x="68.1" y="279.2" class="st3_ciytMap" width="15.8" height="15.8"/>
-	</g>
-	<path class="st2_ciytMap" d="M241.8,277c0,8.2-5.3,15-12.3,16.5v15.6h-5.5v-15.6c-7.1-1.4-12.6-8.2-12.6-16.5c0-0.5,0-1.1,0.1-1.7
-		c0.6-13.9,15.2-41.3,15.2-41.3c8.8,13.8,12.7,29.4,14.3,37.5C241.6,274.8,241.8,277,241.8,277z"/>
-	<path class="st0_ciytMap" d="M492.2,277c0,8.2-5.3,15-12.3,16.5v15.6h-5.5v-15.6c-7.1-1.4-12.6-8.2-12.6-16.5c0-0.5,0-1.1,0.1-1.7
-		c0.6-13.9,15_ciytMap.2-41.3,15.2-41.3c8.8,13.8,12.7,29.4,14.3,37.5C491.9,274.8,492.2,277,492.2,277z"/>
-	<path class="st2_ciytMap" d="M474,277c0,8.2-5.3,15-12.3,16.5v15.6h-5.5v-15.6c-7.1-1.4-12.6-8.2-12.6-16.5c0-0.5,0-1.1,0.1-1.7
-		c0.6-13.9,15.2-41.3,15.2-41.3c8.8,13.8,12.7,29.4,14.3,37.5C473.8,274.8,474,277,474,277z"/>
-	<path class="st2_ciytMap" d="M126,277c0,8.2-5.3,15-12.3,16.5v15.6h-5.5v-15.6c-7.1-1.4-12.6-8.2-12.6-16.5c0-0.5,0-1.1,0.1-1.7
-		c0.6-13.9,15.2-41.3,15.2-41.3c8.8,13.8,12.7,29.4,14.3,37.5C125.8,274.8,126,277,126,277z"/>
-</g>
+		c3-3,7-4.7,11.3-4.7c4.3,0,8.3,1.7,11.3,4.7C322.7,22.1,322.7,32.3,316.5,38.5z"
+    />
+    <ellipse class="st3_CityMap" cx="305.1" cy="96.7" rx="27.5" ry="5.6" />
+    <g>
+      <polygon
+        class="st4_CityMap"
+        points="548.8,198.4 568.8,180.1 588.9,198.4 588.9,309.1 548.8,309.1 		"
+      />
+      <polygon
+        class="st3_CityMap"
+        points="568.8,180.1 506.4,180.1 490.4,198.4 548.8,198.4 		"
+      />
+      <rect
+        x="490.4"
+        y="198.4"
+        class="st5_CityMap"
+        width="58.4"
+        height="110.6"
+      />
+      <rect x="495.1" y="205" class="st3_CityMap" width="47.6" height="10.3" />
+      <rect x="559" y="205" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="569.8" y="205" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="559" y="225.9" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="569.8" y="225.9" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="559" y="246.8" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="569.8" y="246.8" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="559" y="267.7" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="495.1" y="284.6" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="526.9" y="284.6" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect
+        x="511.6"
+        y="284.6"
+        class="st6_CityMap"
+        width="10.1"
+        height="24.5"
+      />
+      <rect x="537.3" y="284.6" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="569.8" y="267.7" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect
+        x="495.1"
+        y="225.9"
+        class="st3_CityMap"
+        width="47.6"
+        height="10.3"
+      />
+      <rect
+        x="495.1"
+        y="246.8"
+        class="st3_CityMap"
+        width="47.6"
+        height="10.3"
+      />
+      <rect
+        x="495.1"
+        y="263.7"
+        class="st3_CityMap"
+        width="47.6"
+        height="10.3"
+      />
+    </g>
+    <g>
+      <polygon
+        class="st4_CityMap"
+        points="418.3,198.4 438.3,180.1 458.3,198.4 458.3,309.1 418.3,309.1 		"
+      />
+      <polygon
+        class="st3_CityMap"
+        points="438.3,180.1 375.9,180.1 359.9,198.4 418.3,198.4 		"
+      />
+      <rect
+        x="359.9"
+        y="198.4"
+        class="st5_CityMap"
+        width="58.4"
+        height="110.6"
+      />
+      <rect x="364.6" y="205" class="st3_CityMap" width="47.6" height="10.3" />
+      <rect x="428.5" y="205" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="439.3" y="205" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="428.5" y="225.9" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="439.3" y="225.9" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="428.5" y="246.8" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="439.3" y="246.8" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="428.5" y="267.7" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="364.6" y="284.6" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="396.4" y="284.6" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="381" y="284.6" class="st6_CityMap" width="10.1" height="24.5" />
+      <rect x="406.8" y="284.6" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="439.3" y="267.7" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect
+        x="364.6"
+        y="225.9"
+        class="st3_CityMap"
+        width="47.6"
+        height="10.3"
+      />
+      <rect
+        x="364.6"
+        y="246.8"
+        class="st3_CityMap"
+        width="47.6"
+        height="10.3"
+      />
+      <rect
+        x="364.6"
+        y="263.7"
+        class="st3_CityMap"
+        width="47.6"
+        height="10.3"
+      />
+    </g>
+    <g>
+      <polygon
+        class="st4_CityMap"
+        points="184.5,198.4 204.5,180.1 224.6,198.4 224.6,309.1 184.5,309.1 		"
+      />
+      <polygon
+        class="st3_CityMap"
+        points="204.5,180.1 142.1,180.1 126.1,198.4 184.5,198.4 		"
+      />
+      <rect
+        x="126.1"
+        y="198.4"
+        class="st5_CityMap"
+        width="58.4"
+        height="110.6"
+      />
+      <rect x="130.8" y="205" class="st3_CityMap" width="47.6" height="10.3" />
+      <rect x="194.7" y="205" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="205.5" y="205" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="194.7" y="225.9" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="205.5" y="225.9" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="194.7" y="246.8" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="205.5" y="246.8" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="194.7" y="267.7" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="130.8" y="284.6" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="162.6" y="284.6" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect
+        x="147.3"
+        y="284.6"
+        class="st6_CityMap"
+        width="10.1"
+        height="24.5"
+      />
+      <rect x="173" y="284.6" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect x="205.5" y="267.7" class="st3_CityMap" width="5.5" height="10.3" />
+      <rect
+        x="130.8"
+        y="225.9"
+        class="st3_CityMap"
+        width="47.6"
+        height="10.3"
+      />
+      <rect
+        x="130.8"
+        y="246.8"
+        class="st3_CityMap"
+        width="47.6"
+        height="10.3"
+      />
+      <rect
+        x="130.8"
+        y="263.7"
+        class="st3_CityMap"
+        width="47.6"
+        height="10.3"
+      />
+    </g>
+    <g>
+      <rect
+        x="237.1"
+        y="267.7"
+        class="st5_CityMap"
+        width="58.4"
+        height="41.4"
+      />
+      <rect x="242.9" y="279.2" class="st3_CityMap" width="5.5" height="15.6" />
+      <polygon
+        class="st4_CityMap"
+        points="295.4,267.7 315.5,249.4 332.1,267.7 332.1,309.1 295.4,309.1 		"
+      />
+      <polygon
+        class="st3_CityMap"
+        points="315.5,249.4 253,249.4 237.1,267.7 295.4,267.7 		"
+      />
+      <rect
+        x="253.8"
+        y="287.1"
+        class="st6_CityMap"
+        width="10.1"
+        height="21.9"
+      />
+      <rect
+        x="269.3"
+        y="279.2"
+        class="st3_CityMap"
+        width="15.8"
+        height="15.8"
+      />
+      <rect
+        x="305.1"
+        y="279.2"
+        class="st3_CityMap"
+        width="15.8"
+        height="15.8"
+      />
+    </g>
+    <g>
+      <rect y="267.7" class="st5_CityMap" width="58.4" height="41.4" />
+      <rect x="5.8" y="279.2" class="st3_CityMap" width="5.5" height="15.6" />
+      <polygon
+        class="st4_CityMap"
+        points="58.4,267.7 78.4,249.4 95,267.7 95,309.1 58.4,309.1 		"
+      />
+      <polygon
+        class="st3_CityMap"
+        points="78.4,249.4 16,249.4 0,267.7 58.4,267.7 		"
+      />
+      <rect x="16.7" y="287.1" class="st6_CityMap" width="10.1" height="21.9" />
+      <rect x="32.2" y="279.2" class="st3_CityMap" width="15.8" height="15.8" />
+      <rect x="68.1" y="279.2" class="st3_CityMap" width="15.8" height="15.8" />
+    </g>
+    <path
+      class="st2_CityMap"
+      d="M241.8,277c0,8.2-5.3,15-12.3,16.5v15.6h-5.5v-15.6c-7.1-1.4-12.6-8.2-12.6-16.5c0-0.5,0-1.1,0.1-1.7
+		c0.6-13.9,15.2-41.3,15.2-41.3c8.8,13.8,12.7,29.4,14.3,37.5C241.6,274.8,241.8,277,241.8,277z"
+    />
+    <path
+      class="st0_CityMap"
+      d="M492.2,277c0,8.2-5.3,15-12.3,16.5v15.6h-5.5v-15.6c-7.1-1.4-12.6-8.2-12.6-16.5c0-0.5,0-1.1,0.1-1.7
+		c0.6-13.9,15.2-41.3,15.2-41.3c8.8,13.8,12.7,29.4,14.3,37.5C491.9,274.8,492.2,277,492.2,277z"
+    />
+    <path
+      class="st2_CityMap"
+      d="M474,277c0,8.2-5.3,15-12.3,16.5v15.6h-5.5v-15.6c-7.1-1.4-12.6-8.2-12.6-16.5c0-0.5,0-1.1,0.1-1.7
+		c0.6-13.9,15.2-41.3,15.2-41.3c8.8,13.8,12.7,29.4,14.3,37.5C473.8,274.8,474,277,474,277z"
+    />
+    <path
+      class="st2_CityMap"
+      d="M126,277c0,8.2-5.3,15-12.3,16.5v15.6h-5.5v-15.6c-7.1-1.4-12.6-8.2-12.6-16.5c0-0.5,0-1.1,0.1-1.7
+		c0.6-13.9,15.2-41.3,15.2-41.3c8.8,13.8,12.7,29.4,14.3,37.5C125.8,274.8,126,277,126,277z"
+    />
+  </g>
 </svg>
   `;
   return icon;
