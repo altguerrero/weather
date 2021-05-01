@@ -1,6 +1,8 @@
 .card-day {
   &__main {
     padding-top: 4rem;
+    animation-duration: 0.5s;
+    animation-name: fade;
   }
   &__item {
     display: grid;

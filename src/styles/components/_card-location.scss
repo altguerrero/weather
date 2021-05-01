@@ -4,6 +4,8 @@
     width: 100%;
     transform: translateY(-200px);
     padding-right: 2rem;
+    animation-duration: 0.5s;
+    animation-name: fade;
   }
   &__container {
     display: grid;

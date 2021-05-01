@@ -12,14 +12,23 @@ const Layout = async () => {
   const avatar = null || document.getElementById("avatarContainer");
   const section3 = null || document.getElementById("section3");
 
-  header.appendChild(await Header());
-  section1.appendChild(await CardsDay());
-  section2.appendChild(await Visit());
-  avatar.appendChild(await Avatar());
-  section3.appendChild(await CardsLocation());
+  const headerData = await Header();
+  const cardsDayData = await CardsDay();
+  const visitData = await Visit();
+  const avatarData = await Avatar();
+  const cardLocationData = await CardsLocation();
+  const newLocationData = await NewLocation();
+
+  document.querySelector(".loading").style.display = "none";
+
+  header.appendChild(headerData);
+  section1.appendChild(cardsDayData);
+  section2.appendChild(visitData);
+  avatar.appendChild(avatarData);
+  section3.appendChild(cardLocationData);
 
   const cardLocation = null || document.querySelector(".card-location__main");
-  cardLocation.appendChild(await NewLocation());
+  cardLocation.appendChild(newLocationData);
 };
 
 export default Layout;

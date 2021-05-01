@@ -7,6 +7,8 @@
     width: 100%;
     margin-top: 4rem;
     height: 362px;
+    animation-duration: 0.5s;
+    animation-name: fade;
   }
   &__link {
     display: block;
