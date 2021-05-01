@@ -110,6 +110,18 @@
       height: 40px;
       margin-bottom: 0.25rem;
     }
+
+    & .st1_CloudDark,
+    & .st0_Cloud,
+    & .st1_CloudsMoon,
+    & .st1_CloudsSun,
+    & .st1_RainSun,
+    & .st1_Drizzle,
+    & .st1_thunderstorm,
+    & .st1_few,
+    & .st1_Rain {
+      fill: #fff !important;
+    }
   }
   &__temp {
     padding: 1.5rem;

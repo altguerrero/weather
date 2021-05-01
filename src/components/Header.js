@@ -8,7 +8,7 @@ const Header = async () => {
   divElement.classList.add("header__main");
   divElement.innerHTML = view;
 
-  const data = await getData("Bogota");
+  const data = await getData("bogota");
   //   Location
   divElement.querySelector(".header__location").innerHTML = `
     ${Marker()}

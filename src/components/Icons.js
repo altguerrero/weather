@@ -18,7 +18,7 @@ export const Marker = () => {
   return icon;
 };
 
-export const BogotaMap = (color = "#7E68E7") => {
+export const BogotaMap = () => {
   let icon = `
   <svg
   version="1.1"
@@ -33,7 +33,7 @@ export const BogotaMap = (color = "#7E68E7") => {
   xml:space="preserve"
 >
   <style type="text/css">
-    .st0_bogota{fill: ${color}}
+    .st0_bogota{fill: #7E68E7}
   </style>
   <defs></defs>
   <g>
@@ -111,7 +111,7 @@ export const BogotaMap = (color = "#7E68E7") => {
   return icon;
 };
 
-export const Clouds = (color = "#7E68E7") => {
+export const Clouds = () => {
   let icon = `
   <svg
   version="1.1"
@@ -127,7 +127,7 @@ export const Clouds = (color = "#7E68E7") => {
 >
   <style type="text/css">
     .st0_few{fill:#F9C900;}
-    .st1_few{fill: ${color};}
+    .st1_few{fill: #7E68E7;}
   </style>
   <defs></defs>
   <g>
@@ -187,7 +187,7 @@ export const Clouds = (color = "#7E68E7") => {
   return icon;
 };
 
-export const Thunderstorm = (color = "#7e68e7") => {
+export const Thunderstorm = () => {
   let icon = `
   <svg
   version="1.1"
@@ -206,7 +206,7 @@ export const Thunderstorm = (color = "#7e68e7") => {
       fill: #d1ceea;
     }
     .st1_thunderstorm {
-      fill: ${color};
+      fill: #7E68E7;
     }
     .st2_thunderstorm {
       fill: #f9c900;
@@ -238,7 +238,7 @@ export const Thunderstorm = (color = "#7e68e7") => {
 
   return icon;
 };
-export const Drizzle = (color = "#7e68e7") => {
+export const Drizzle = () => {
   let icon = `
   <svg
   version="1.1"
@@ -257,7 +257,7 @@ export const Drizzle = (color = "#7e68e7") => {
       fill: #d1ceea;
     }
     .st1_Drizzle {
-      fill: ${color};
+      fill: #7E68E7;
     }
   </style>
   <defs></defs>
@@ -323,7 +323,7 @@ export const Drizzle = (color = "#7e68e7") => {
   return icon;
 };
 
-export const RainSun = (color = "#7e68e7") => {
+export const RainSun = () => {
   let icon = `
   <svg
   version="1.1"
@@ -342,7 +342,7 @@ export const RainSun = (color = "#7e68e7") => {
       fill: #f9c900;
     }
     .st1_RainSun {
-      fill: ${color};
+      fill: #7E68E7;
     }
   </style>
   <defs></defs>
@@ -463,7 +463,7 @@ export const Rain = (color = "#7e6e7") => {
       fill: #d1ceea;
     }
     .st1_Rain {
-      fill: ${color};
+      fill: #7E68E7;
     }
   </style>
   <defs></defs>
@@ -627,7 +627,7 @@ export const ClearMoon = () => {
   return icon;
 };
 
-export const CloudsSun = (color = "#7e68e7") => {
+export const CloudsSun = () => {
   let icon = `
   <svg
   version="1.1"
@@ -646,7 +646,7 @@ export const CloudsSun = (color = "#7e68e7") => {
       fill: #f9c900;
     }
     .st1_CloudsSun {
-      fill: ${color};
+      fill: #7E68E7;
     }
   </style>
   <defs></defs>
@@ -707,7 +707,7 @@ export const CloudsSun = (color = "#7e68e7") => {
   return icon;
 };
 
-export const CloudsMoon = (color = "#7e68e7") => {
+export const CloudsMoon = () => {
   let icon = `
   <svg
   version="1.1"
@@ -726,7 +726,7 @@ export const CloudsMoon = (color = "#7e68e7") => {
       fill: #f9c900;
     }
     .st1_CloudsMoon {
-      fill: ${color};
+      fill: #7E68E7;
     }
   </style>
   <defs></defs>
@@ -748,7 +748,7 @@ export const CloudsMoon = (color = "#7e68e7") => {
   return icon;
 };
 
-export const Cloud = (color = "#7e68e7") => {
+export const Cloud = () => {
   let icon = `
   <svg
   version="1.1"
@@ -764,7 +764,7 @@ export const Cloud = (color = "#7e68e7") => {
 >
   <style type="text/css">
     .st0_Cloud {
-      fill: ${color};
+      fill: #7E68E7;
     }
   </style>
   <defs></defs>
@@ -779,7 +779,7 @@ export const Cloud = (color = "#7e68e7") => {
   return icon;
 };
 
-export const CloudDark = (color = "#7e68e7") => {
+export const CloudDark = () => {
   let icon = `
   <svg
   version="1.1"
@@ -798,7 +798,7 @@ export const CloudDark = (color = "#7e68e7") => {
       fill: #d1ceea;
     }
     .st1_CloudDark {
-      fill: ${color};
+      fill: #7E68E7;
     }
   </style>
   <defs></defs>
