@@ -18,6 +18,7 @@ module.exports = {
   resolve: {
     extensions: [".js"],
     alias: {
+      "@components": path.resolve(__dirname, "src/components/"),
       "@utils": path.resolve(__dirname, "src/utils/"),
       "@styles": path.resolve(__dirname, "src/styles/"),
       "@images": path.resolve(__dirname, "src/assets/images"),
@@ -94,6 +95,6 @@ module.exports = {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
     historyApiFallback: true,
-    port: 8000,
+    port: 9000,
   },
 };
