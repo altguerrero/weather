@@ -6,7 +6,7 @@ import getIcon from "../utils/getIcon";
 const Header = async () => {
   const divElement = document.createElement("div");
   divElement.classList.add("header__main");
-  divElement.innerHTML = view;
+  divElement.innerHTML = view; 
 
   const data = await getData("bogota");
   //   Location
