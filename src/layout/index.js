@@ -25,10 +25,10 @@ const Layout = async () => {
   section1.appendChild(cardsDayData);
   section2.appendChild(visitData);
   avatar.appendChild(avatarData);
-  // section3.appendChild(cardLocationData);
+  section3.appendChild(cardLocationData);
 
-  // const cardLocation = null || document.querySelector(".card-location__main");
-  // cardLocation.appendChild(newLocationData);
+  const cardLocation = null || document.querySelector(".card-location__main");
+  cardLocation.appendChild(newLocationData);
 };
 
 export default Layout;
