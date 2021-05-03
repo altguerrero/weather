@@ -22,9 +22,9 @@ const Layout = async () => {
   document.querySelector(".loading").style.display = "none";
 
   header.appendChild(headerData);
-  // section1.appendChild(cardsDayData);
-  // section2.appendChild(visitData);
-  // avatar.appendChild(avatarData);
+  section1.appendChild(cardsDayData);
+  section2.appendChild(visitData);
+  avatar.appendChild(avatarData);
   // section3.appendChild(cardLocationData);
 
   // const cardLocation = null || document.querySelector(".card-location__main");
