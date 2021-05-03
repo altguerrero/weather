@@ -5,6 +5,7 @@
 .grid {
   &__container {
     display: grid;
+    padding: 0 1rem;
     grid-template-columns: 1fr ;
     column-gap: 1rem;
 
